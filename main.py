@@ -4,8 +4,6 @@ import time
 import os
 import json
 import random
-from dotenv import load_dotenv
-load_dotenv()  # Загружаем переменные окружения из файла .env
 TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = (os.getenv("CHAT_ID"))
 RSS_URL = os.getenv("RSS_URL")
