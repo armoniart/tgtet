@@ -52,4 +52,4 @@ if __name__ == "__main__":
     while True:
         send_random_news()
         # Ожидание между проверками (5 минут)
-        time.sleep(100)
+        time.sleep(600)
