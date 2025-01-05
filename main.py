@@ -9,9 +9,7 @@ load_dotenv()  # Загружаем переменные окружения из
 TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = (os.getenv("CHAT_ID"))
 RSS_URL = os.getenv("RSS_URL")
-# Имя файла для хранения списка отправленных ссылок
 SENT_LINKS_FILE = "sent_links.json"
-# Инициализация бота
 bot = telebot.TeleBot(TOKEN)
 # Загрузить список уже отправленных ссылок из файла
 try:
