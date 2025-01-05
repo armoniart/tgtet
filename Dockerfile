@@ -6,6 +6,5 @@ RUN pip install telebot
 RUN pip install parse
 RUN pip install feedparser
 RUN pip install load_dotenv
-RUN poetry config virtualenvs.create false
 
 CMD ["run", "python", "main.py"]
