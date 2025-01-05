@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . /app
 RUN pip install telebot
 RUN pip install poetry
+RUN pip install parse
 RUN poetry config virtualenvs.create false
 
 CMD ["poetry", "run", "python", "main.py"]
