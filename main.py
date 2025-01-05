@@ -37,7 +37,7 @@ def send_random_news():
         link = random_entry.link
 
         # Форматируем сообщение
-        message = f"📰 Новость:\n\n{title}\n\nПодробнее: {link}"
+        message = f"📰"
 
         # Отправляем сообщение в чат
         bot.send_message(CHAT_ID, message)
