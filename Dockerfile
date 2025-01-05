@@ -7,4 +7,4 @@ RUN pip install parse
 RUN pip install feedparser
 RUN pip install load_dotenv
 
-CMD ["run", "python", "main.py"]
+CMD ["python", "main.py"]
