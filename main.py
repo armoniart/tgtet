@@ -4,10 +4,12 @@ import time
 import os
 import json
 import random
+import logging
 TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = (os.getenv("CHAT_ID"))
 RSS_URL = os.getenv("RSS_URL")
 SENT_LINKS_FILE = "sent_links.json"
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 bot = telebot.TeleBot(TOKEN)
 # Загрузить список уже отправленных ссылок из файла
 try:
