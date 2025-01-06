@@ -43,6 +43,7 @@ def send_random_news():
 
         # Отправляем сообщение в чат
         bot.send_message(CHAT_ID, message)
+        logging.info(f'Отправлено: {title}')
 
         # Добавляем ссылку в список отправленных
         sent_links.append(link)
